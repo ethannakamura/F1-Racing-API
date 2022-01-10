@@ -9,30 +9,37 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="day3hw.css">
+    <link rel="stylesheet" href="static/css/f1.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="day3hw.js" defer></script>
+    <script src="f1.js" defer></script>
     <title>Racer API</title>
 </head>
-<nav id="navbar" class="navbar bg-light">
-    <a class="navbar-brand" href="#">Weather</a>
-    <a class="nav-item nav-link" href="#">Home</a>
-    <a class="nav-item nav-link" href="#">Racer</a>
-    <a class="nav-item nav-link" href="#">Sample</a>
-</nav>
+
+<section>
+    <div class="row justify-content-center mt=4" id="header">
+        <div class="col-6">
+        <h3 class="mt-4">Welcome to the F1 Standings Generator</h3>
+
+        <h6>This will generate race standings dating back to 1950</h6>
+
+        <h6>Type your Season Year and Round to discover history!</h6>
+    </div>
+</div>
 
 <body>
     <section>
-        <div id="tabs" class="row justify-content-center mt=6">
+        <div class="row justify-content-center mt=6" id="tabs">
             <div class="col-6" form>
                 <div class="form-row">
-                    <input type='text' class='text' placeholder='Enter Season' id='season'>
+                    <input type='text' class='text' placeholder='Enter Season Year' id='season'>
                     <input type='text' class='text' placeholder='Enter Round' id='round'>
-                    <button id='button1' type='button' class='btn btn-outline-secondary btn-lg' id="button1"
-                        onClick=getData()>Get Standings
-                    </button>
                 </div>
-                <table class="container table table-dark" id="table1">
+
+                <button id='button1' type='button' class='btn btn-outline-danger btn-lg text-danger mt-3' id="button1"
+                    onClick=getData()>Get Standings
+                </button>
+
+                <table class="container table bg-transparent" id="table1">
                     <thread>
                         <tr>
                             <th scope='col'>Position</th>
@@ -42,7 +49,7 @@
                             <th scope="col">Points</th>
                         </tr>
                     </thread>
-                    <tbody>
+                    <tbody class="background-color: bg-light">
                         <tr>
                             <th scope='row'>1</th>
                             <td id='name-0'></td>

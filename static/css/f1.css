@@ -1,7 +1,11 @@
 body {
-    background-image: linear-gradient(to left, red , rgb(239, 151, 0));
+    background-image: url(https://images.hdqwalls.com/download/the-crew-2-red-bull-f1-car-4k-gj-2560x1440.jpg);
+    justify-content: center;
 }
 
+#header{
+    text-align: center;
+}
 #tabs {
     margin-top: 50px;
     margin-bottom: 70px;
@@ -11,8 +15,8 @@ body {
 #button1 {
     background-color: rgba(240, 248, 255, 0.448);
     color:white;
-    padding-left:100px;
-    padding-right:100px;
+    padding-left:50px;
+    padding-right:50px;
     border-radius: 5px;
     height:52px;
 }
@@ -22,6 +26,7 @@ body {
     height:50px;
     width: 250px;    
     border-radius: 5px;
+
 }
 #round{
     text-align:center;
@@ -34,4 +39,8 @@ body {
     justify-content:left;
     text-align:left;
     color:black
+}
+
+#tabs{
+    text-align: center;
 }
