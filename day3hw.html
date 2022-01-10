@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Racing API" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="day3hw.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="day3hw.js" defer></script>
+    <title>Racer API</title>
+</head>
+<nav id="navbar" class="navbar bg-light">
+    <a class="navbar-brand" href="#">Weather</a>
+    <a class="nav-item nav-link" href="#">Home</a>
+    <a class="nav-item nav-link" href="#">Racer</a>
+    <a class="nav-item nav-link" href="#">Sample</a>
+</nav>
+
+<body>
+    <section>
+        <div id="tabs" class="row justify-content-center mt=6">
+            <div class="col-6" form>
+                <div class="form-row">
+                    <input type='text' class='text' placeholder='Enter Season' id='season'>
+                    <input type='text' class='text' placeholder='Enter Round' id='round'>
+                    <button id='button1' type='button' class='btn btn-outline-secondary btn-lg' id="button1"
+                        onClick=getData()>Get Standings
+                    </button>
+                </div>
+                <table class="container table table-dark" id="table1">
+                    <thread>
+                        <tr>
+                            <th scope='col'>Position</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Nationality</th>
+                            <th scope="col">Sponsor</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                    </thread>
+                    <tbody>
+                        <tr>
+                            <th scope='row'>1</th>
+                            <td id='name-0'></td>
+                            <td id='nationality-0'></td>
+                            <td id='sponsor-0'></td>
+                            <td id='points-0'></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td id='name-1'></td>
+                            <td id='nationality-1'></td>
+                            <td id='sponsor-1'></td>
+                            <td id='points-1'></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td id='name-2'></td>
+                            <td id='nationality-2'></td>
+                            <td id='sponsor-2'></td>
+                            <td id='points-2'></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td id='name-3'></td>
+                            <td id='nationality-3'></td>
+                            <td id='sponsor-3'></td>
+                            <td id='points-3'></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td id='name-4'></td>
+                            <td id='nationality-4'></td>
+                            <td id='sponsor-4'></td>
+                            <td id='points-4'></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td id='name-5'></td>
+                            <td id='nationality-5'></td>
+                            <td id='sponsor-5'></td>
+                            <td id='points-5'></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td id='name-6'></td>
+                            <td id='nationality-6'></td>
+                            <td id='sponsor-6'></td>
+                            <td id='points-6'></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
